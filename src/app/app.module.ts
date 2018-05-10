@@ -1,11 +1,16 @@
+import { HttpModule } from '@angular/http';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 
 import { AppComponent } from './app.component';
 import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { WorkteamComponent } from './componentes/workteam/workteam.component';
+//Servicio
+import { GetDataService } from '../app/get-data.service';
+
 
 
 @NgModule({
@@ -13,12 +18,16 @@ import { FooterComponent } from './componentes/footer/footer.component';
     AppComponent,
     NavegacionComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    WorkteamComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    GetDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,13 @@
+<div class="container my-5">
+    <h2 class="mb-5" align="center">Conoce nuestro equipo <span class="font-weight-bold">MAFOLI</span>...</h2>
+    <div class="row">
+        <div class="col-lg-4">
+            <div *ngFor="let team of _st.allteam" class="testimonial-item mx-auto mb-3 mb-lg-0">
+                <img class="img-fluid rounded-circle mb-3" src="{{team.img}}" alt="">
+                <h5>{{ team.nombre }}</h5>
+                <p class="font-weight-light mb-0">{{ team.frase }}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
