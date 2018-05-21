@@ -6,7 +6,7 @@ import { GetDataService } from '../../get-data.service';
 @Component({
   selector: 'app-workteam',
   templateUrl: './workteam.component.html',
-  styles: ['./workteamstyle.css']
+  styles: ['./workteam.style.css']
 })
 export class WorkteamComponent implements OnInit {
 
