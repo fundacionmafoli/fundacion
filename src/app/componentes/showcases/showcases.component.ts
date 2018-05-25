@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+//comsumo servivicio
+import { GetDataService } from './../../get-data.service';
 
 @Component({
   selector: 'app-showcases',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./showcases.component.css']
 })
 export class ShowcasesComponent implements OnInit {
+//pt:photos services
 
-  constructor() { }
+constructor(_ps:GetDataService) { 
+
+}
 
   ngOnInit() {
   }
+  
 
 }
