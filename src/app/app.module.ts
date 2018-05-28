@@ -7,11 +7,11 @@ import { AppComponent } from './app.component';
 import { NavegacionComponent } from './componentes/navegacion/navegacion.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { WorkteamComponent } from './componentes/workteam/workteam.component';
-//Servicio
-import { GetDataService } from '../app/get-data.service';
 import { ShowcasesComponent } from './componentes/showcases/showcases.component';
 import { HeaderComponent } from './componentes/header/header.component';
 
+import { GetDataService } from '../app/get-data.service';
+//Servicio
 
 
 
