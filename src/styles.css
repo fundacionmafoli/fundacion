@@ -3,3 +3,9 @@ img {
     height: 300px !important;
     border-radius: 50%!important;
 }
+
+.cuadro {
+    width: 300px !important;
+    height: 300px !important;
+    border-radius: 0%!important;
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { GetDataService } from './../../get-data.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,7 +12,9 @@ export class HeaderComponent  {
   
   dia:any = "";
   
-  constructor() {
+  constructor(public _fs:GetDataService) {
+    
+    
     this.dia = new Date().getDay();
 
     switch (this.dia){

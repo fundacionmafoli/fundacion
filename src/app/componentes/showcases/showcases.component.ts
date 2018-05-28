@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http';
+
 //comsumo servivicio
 import { GetDataService } from './../../get-data.service';
 
@@ -11,7 +11,7 @@ import { GetDataService } from './../../get-data.service';
 export class ShowcasesComponent implements OnInit {
 //pt:photos services
 
-constructor(_ps:GetDataService) { 
+constructor(public _ps:GetDataService) { 
 
 }
 

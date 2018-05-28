@@ -5,11 +5,13 @@ import { Http } from '@angular/http';
 export class GetDataService {
   
   allteam:any  [] = [];
-  getExperincias:any []=[];
+  verExperiencias:any []=[];
+  phrase:any [] = [];
 
   constructor(public http:Http) { 
     this.getTeam();
     this.getExperiencias();
+    this.traerFrase();
   }
 
   public getTeam(){
@@ -23,9 +25,17 @@ export class GetDataService {
   public getExperiencias(){
     this.http.get("https://websitemafoli.firebaseio.com/experiencias.json")
               .subscribe(data=>{
-                this.getExperiencias = data.json();
-                console.log(this.getExperiencias);
+                this.verExperiencias = data.json();
+                console.log(this.verExperiencias);
                 
               })
+  }
+
+  public traerFrase(){
+      this.http.get("https://websitemafoli.firebaseio.com/frasedia.json")
+                  .subscribe(data=>{
+                    this.phrase = data.json();
+                    console.log(this.phrase);
+                  })
   }
 }
