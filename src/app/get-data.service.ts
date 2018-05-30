@@ -18,7 +18,7 @@ export class GetDataService {
         this.http.get("https://websitemafoli.firebaseio.com/team.json")
                   .subscribe(data => {
                   this.allteam = data.json();
-                  console.log(this.allteam);
+                  // console.log(this.allteam);
               });
   }
 
@@ -26,7 +26,7 @@ export class GetDataService {
     this.http.get("https://websitemafoli.firebaseio.com/experiencias.json")
               .subscribe(data=>{
                 this.verExperiencias = data.json();
-                console.log(this.verExperiencias);
+                // console.log(this.verExperiencias);
                 
               })
   }
@@ -35,7 +35,7 @@ export class GetDataService {
       this.http.get("https://websitemafoli.firebaseio.com/frasedia.json")
                   .subscribe(data=>{
                     this.phrase = data.json();
-                    console.log(this.phrase);
+                    // console.log(this.phrase);
                   })
   }
 }
