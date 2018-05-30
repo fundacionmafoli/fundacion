@@ -1,16 +1,17 @@
-<section class="showcase mt-4">
+<section class="showcase mt-4" id="experiencias">
     <div class="container-fluid p-0">
 
         <div class="row no-gutters" *ngFor="let caso of _ps.verExperiencias">
 
-            <img class="col-lg-6 order-lg-2  cuadro" src="{{caso.img}}" alt="">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://firebasestorage.googleapis.com/v0/b/websitemafoli.appspot.com/o/Mafoli%20Grupo.jpeg?alt=media&token=1080ff59-aa0c-4d14-9e6a-0ea1ab512a6e');"></div>
 
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2> {{ caso.titulo}} </h2>
                 <p class="lead mb-0">{{ caso.texto}}</p>
             </div>
         </div>
-        <!-- <div class="row no-gutters">
+    </div>
+    <!-- <div class="row no-gutters">
             <div class="col-lg-6 text-white showcase-img" style="background-image: url('../../assets/img/bg-showcase-2.jpg');">
             </div>
             <div class="col-lg-6 my-auto showcase-text">
@@ -25,5 +26,5 @@
                 <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
             </div>
         </div> -->
-    </div>
+
 </section>

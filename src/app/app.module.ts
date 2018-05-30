@@ -10,9 +10,11 @@ import { WorkteamComponent } from './componentes/workteam/workteam.component';
 import { ShowcasesComponent } from './componentes/showcases/showcases.component';
 import { HeaderComponent } from './componentes/header/header.component';
 
-import { GetDataService } from '../app/get-data.service';
 //Servicio
+import { GetDataService } from '../app/get-data.service';
 
+//rutas
+import { app_routing } from './app.routes';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { GetDataService } from '../app/get-data.service';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    app_routing
   ],
   providers: [
     GetDataService
