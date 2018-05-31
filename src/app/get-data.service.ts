@@ -6,7 +6,7 @@ export class GetDataService {
   
   allteam:any  [] = [];
   verExperiencias:any []=[];
-  phrase:any [] = [];
+  phrase:any = "";
 
   constructor(public http:Http) { 
     this.getTeam();
